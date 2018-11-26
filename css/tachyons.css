@@ -21,6 +21,16 @@
  *       - Debug children
  *
  */
+/*MY OWN ADDITONS*/
+.snapBody {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+.snapper {
+  scroll-snap-align: start;
+}
+
+
 /* External Library Includes */
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -816,6 +826,8 @@ code, .code { font-family: Consolas, monaco, monospace; }
      -l  = large
 
 */
+
+
 /* Height Scale */
 .h1 { height: 1rem; }
 .h2 { height: 2rem; }
@@ -1758,7 +1770,9 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .small-caps { font-variant: small-caps; }
 /* Combine this class with a width to truncate text (or just leave as is to truncate at width of containing element. */
 .truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.nowrap {white-space: nowrap;}
 /*
+
 
    UTILITIES
 
@@ -1882,7 +1896,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .shadow-hover:hover::after, .shadow-hover:focus::after { opacity: 1; }
 /* Combine with classes in skins and skins-pseudo for
  * many different transition possibilities. */
-.bg-animate, .bg-animate:hover, .bg-animate:focus { transition: background-color .15s ease-in-out; }
+.bg-animate, .bg-animate:hover, .bg-animate:focus { transition: background-color .6s ease-in-out; }
 /*
 
   Z-INDEX
